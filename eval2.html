@@ -26,9 +26,11 @@
             $("#enable-instructor").change(function () {
                 if (this.checked) {
                     $("#instructor").show();
+                    $("#instructor-name").hide();
                 }
                 else {
                     $("#instructor").hide();
+                    $("#instructor-name").show();
                 }
             });
         });
@@ -94,15 +96,15 @@
 
             <div class="pull-right">
                 <label class="checkbox" style="display:inline-block; margin-right: 10px;"><input type="checkbox" id="enable-instructor" />Not my TA</label>
-                <select id="instructor" name="instructor" style="display:none;">
-                    <option>Select a Different TA</option>
-                    <option>Bender Rodriguez</option>
-                    <option>Hermes Conrad</option>
-                    <option>Cubert Farnsworth</option>
-                </select>
             </div>
 
-			<h4>Philip Fry</h4>
+			<h4 id="instructor-name">Philip Fry</h4>
+            <select id="instructor" name="instructor" style="display:none;">
+                <option>Select a Different TA</option>
+                <option>Bender Rodriguez</option>
+                <option>Hermes Conrad</option>
+                <option>Cubert Farnsworth</option>
+            </select>
 		
 			<ol>
 				<li>
