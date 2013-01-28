@@ -12,6 +12,24 @@
     <![endif]-->
     <title>Ace-mockups by ucdavis</title>
 
+      <style type="text/css">
+          .remove, .add {
+              margin-bottom: 10px;
+          }
+          a.btn.remove i, a.btn.add i, #courseSections.nav li button i {
+              margin-right: 0;
+          }
+          .instructor span.span2{
+            margin-left:  0;
+            margin-right:  3px;   
+          }
+          .section, .nav-section { display:  none;}
+        
+          #courseSections.nav li a {width: 297px; display:  inline-block;}
+          #courseSections.nav li button { height: 36px; margin-bottom: 3px; }
+          #courseSections.nav li.nav-section {margin-left:  46px;}
+      </style>
+
   </head>
 
   <body>
@@ -37,68 +55,262 @@
 
     <div class="jumbotron">
          <div class="container">
-            <h1>Staff Sample 1</h1>
+            <h1>Staff Sample 2</h1>
             <p>
-            This sample is for setting up evaluations in SIMPLE mode.
+            This sample is for configuring details for a course
             </p>
          </div>
     </div>
 
     <div class="container">
         
+        <h2>Chem 2A</h2>
+
         <div class="row">
-            <div class="span6">
-            
-            </div>
-            <div class="span6">
-                <ul>
-                    <li>CHE 002B</li>
-                    <li>CHE 002BH</li>
-                    <li>CHE 008B</li>
-                    <li>CHE 098</li>
-                    <li>CHE 099</li>
-                    <li>CHE 100</li>
-                    <li>CHE 107B</li>
-                    <li>CHE 110B</li>
-                    <li>CHE 110C</li>
-                    <li>CHE 115</li>
-                    <li>CHE 118A</li>
-                    <li>CHE 118B</li>
-                    <li>CHE 118C</li>
-                    <li>CHE 124B</li>
-                    <li>CHE 125</li>
-                    <li>CHE 128A</li>
-                    <li>CHE 128B</li>
-                    <li>CHE 129A</li>
-                    <li>CHE 129B</li>
-                    <li>CHE 130A</li>
-                    <li>CHE 192</li>
-                    <li>CHE 194HA</li>
-                    <li>CHE 194HB</li>
-                    <li>CHE 194HC</li>
-                    <li>CHE 197</li>
-                    <li>CHE 198</li>
-                    <li>CHE 199</li>
-                    <li>CHE 205</li>
-                    <li>CHE 209</li>
-                    <li>CHE 210A</li>
-                    <li>CHE 216</li>
-                    <li>CHE 219</li>
-                    <li>CHE 219L</li>
-                    <li>CHE 228D</li>
-                    <li>CHE 231A</li>
-                    <li>CHE 241C</li>
-                    <li>CHE 261</li>
-                    <li>CHE 263</li>
-                    <li>CHE 264</li>
-                    <li>CHE 290</li>
-                    <li>CHE 294</li>
-                    <li>CHE 296</li>
-                    <li>CHE 298</li>
-                    <li>CHE 299</li>
-                    <li>CHE 390</li>
-                    <li>CHE 392</li>
+            <div class="span4">
+
+                <ul id="courseSections" class="nav nav-tabs nav-stacked nav-pills">
+                    <li>
+                        <a href="#" data-id="A" data-type="lecture">Section A (8:00AM-8:50AM MWF)</a>
+                        <button class="btn expand" data-id="A"><i class="icon-chevron-down"></i></button>
+                    </li>
+                    <li class="nav-section" data-id="A"><a href="#" data-id="A01" data-type="lecture">Section A01</a></li>
+                    <li class="nav-section" data-id="A"><a href="#" data-id="A02" data-type="lecture">Section A02</a></li>
+                    <li class="nav-section" data-id="A"><a href="#" data-id="A03" data-type="lecture">Section A03</a></li>
+                    <li class="nav-section" data-id="A"><a href="#" data-id="A04" data-type="lecture">Section A04</a></li>
+                    <li class="nav-section" data-id="A"><a href="#" data-id="A05" data-type="lecture">Section A05</a></li>
+                    <li>
+                        <a href="#" data-id="B" data-type="lecture">Section B (5:10PM-6:00PM MWF)</a>
+                        <button class="btn expand"><i class="icon-chevron-down"></i></button>
+                    </li>
+                    <li class="nav-section" data-id="B"><a href="#" data-id="B01" data-type="lecture">Section B01</a></li>
+                    <li class="nav-section" data-id="B"><a href="#" data-id="B02" data-type="lecture">Section B02</a></li>
+                    <li class="nav-section" data-id="B"><a href="#" data-id="B03" data-type="lecture">Section B03</a></li>
+                    <li class="nav-section" data-id="B"><a href="#" data-id="B04" data-type="lecture">Section B04</a></li>
+                    <li>
+                        <a href="#" data-id="C" data-type="lecture">Section C (2:10PM-3:00PM MWF)</a>
+                        <button class="btn expand"><i class="icon-chevron-down"></i></button>
+                    </li>
+                    <li>
+                        <a href="#" data-id="D" data-type="lecture">Section D (9:00AM-10:20AM TR)</a>
+                        <button class="btn expand"><i class="icon-chevron-down"></i></button>
+                    </li>
                 </ul>
+
+            </div>
+            <div class="span8">
+
+                <div id="A" class="lecture section">
+
+                    <div class="well">
+                        <p>Changes here are applied to all subsections.</p>
+                    </div>
+
+                    <fieldset style="margin-top: 0;">
+                        <legend>Instructor(s)</legend>
+
+                        <h4>Lecture (8:00AM-8:50AM MWF)</h4>
+                        <div class="instructor">
+                            <span class="span2">Tomoyuki</span>
+                            <span class="span2">Hayashi</span>
+                            <a href="#" class="remove removeInstructor btn btn-danger"><i class="icon-minus"></i></a>
+                        </div>
+                        <div class="instructor">
+                            <input type="text" class="span2 firstname" placeholder="First Name">
+                            <input type="text" class="span2 lastname" placeholder="Last Name">
+                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            </select>
+                        </div>
+
+                        <h4>Discussion (6:10PM-7:00PM W)</h4>
+
+                        <div class="instructor">
+                            <input type="text" class="span2 firstname" placeholder="First Name">
+                            <input type="text" class="span2 lastname" placeholder="Last Name">
+                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            </select>
+                        </div>
+
+                        <h4>Lab (1:10PM-4:00PM M)</h4>
+
+                        <div class="instructor">
+                            <input type="text" class="span2 firstname" placeholder="First Name">
+                            <input type="text" class="span2 lastname" placeholder="Last Name">
+                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            </select>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Questions</legend>
+
+                        <h4>Sections</h4>
+
+                        <h5>Lecture (8:00AM-8:50AM MWF)</h5>
+
+                        <ol>
+                            <li>Overall quality of this course.</li>
+                            <li>What grade do you expect to receive in this course?</li>
+                            <li>Lecture was at a good time of day.</li>
+                        </ol>
+
+                        <h5>Discussion (6:10PM-7:00PM W)</h5>
+
+                        <ol>
+                            <li>Overall quality of this course.</li>
+                            <li>What grade do you expect to receive in this course?</li>
+                            <li>Discussion was at a good time of day.</li>
+                        </ol>
+
+                        <h5>Lab (1:10PM-4:00PM M)</h5>
+
+                        <ol>
+                            <li>Overall quality of this course.</li>
+                            <li>What grade do you expect to receive in this course?</li>
+                            <li>Lab was at a good time of day.</li>
+                        </ol>
+
+                        <h4>Instructor(s)</h4>
+
+                        <h5>Lecture</h5>
+                        <ol>
+                            <li>The instructor was consistently prepared and well-organized.</li>
+                            <li>The instructor presented material clearly at the appropriate rate.</li>
+                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
+                        </ol>
+
+                        <h5>Lab</h5>
+                        <ol>
+                            <li>The instructor was consistently prepared and well-organized.</li>
+                            <li>The instructor presented material clearly at the appropriate rate.</li>
+                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
+                            <li>Lab facilities were adequete for the assigned labs</li>
+                            <li>There was enough supplies for lab assignments.</li>
+                        </ol>
+
+                        <h5>Discussion</h5>
+                        <ol>
+                            <li>The instructor was consistently prepared and well-organized.</li>
+                            <li>The instructor presented material clearly at the appropriate rate.</li>
+                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
+                        </ol>
+
+
+                    </fieldset>
+
+                </div>
+                <div id="A01" class="lecture section">
+                
+                    <div class="well">
+                        <p>Changes are applied to this specific section.</p>
+                    </div>
+
+                    <fieldset style="margin-top: 0;">
+                        <legend>Instructor(s)</legend>
+
+                        <h4>Lecture (8:00AM-8:50AM MWF)</h4>
+                        <div class="instructor">
+                            <span class="span2">Tomoyuki</span>
+                            <span class="span2">Hayashi</span>
+                            <a href="#" class="remove removeInstructor btn btn-danger"><i class="icon-minus"></i></a>
+                        </div>
+                        <div class="instructor">
+                            <input type="text" class="span2 firstname" placeholder="First Name">
+                            <input type="text" class="span2 lastname" placeholder="Last Name">
+                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            </select>
+                        </div>
+
+                        <h4>Discussion (6:10PM-7:00PM W)</h4>
+
+                        <div class="instructor">
+                            <span class="span2">Philip</span>
+                            <span class="span2">Fry</span>
+                            <a href="#" class="remove removeInstructor btn btn-danger"><i class="icon-minus"></i></a>
+                        </div>
+                        <div class="instructor">
+                            <input type="text" class="span2 firstname" placeholder="First Name">
+                            <input type="text" class="span2 lastname" placeholder="Last Name">
+                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            </select>
+                        </div>
+
+                        <h4>Lab (1:10PM-4:00PM M)</h4>
+
+                        <div class="instructor">
+                            <span class="span2">Amy</span>
+                            <span class="span2">Wong</span>
+                            <a href="#" class="remove removeInstructor btn btn-danger"><i class="icon-minus"></i></a>
+                        </div>
+                        <div class="instructor">
+                            <input type="text" class="span2 firstname" placeholder="First Name">
+                            <input type="text" class="span2 lastname" placeholder="Last Name">
+                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            </select>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Questions</legend>
+
+                        <h4>Sections</h4>
+
+                        <h5>Lecture (8:00AM-8:50AM MWF)</h5>
+
+                        <ol>
+                            <li>Overall quality of this course.</li>
+                            <li>What grade do you expect to receive in this course?</li>
+                            <li>Lecture was at a good time of day.</li>
+                        </ol>
+
+                        <h5>Discussion (6:10PM-7:00PM W)</h5>
+
+                        <ol>
+                            <li>Overall quality of this course.</li>
+                            <li>What grade do you expect to receive in this course?</li>
+                            <li>Discussion was at a good time of day.</li>
+                        </ol>
+
+                        <h5>Lab (1:10PM-4:00PM M)</h5>
+
+                        <ol>
+                            <li>Overall quality of this course.</li>
+                            <li>What grade do you expect to receive in this course?</li>
+                            <li>Lab was at a good time of day.</li>
+                        </ol>
+
+                        <h4>Instructor(s)</h4>
+
+                        <h5>Lecture</h5>
+                        <ol>
+                            <li>The instructor was consistently prepared and well-organized.</li>
+                            <li>The instructor presented material clearly at the appropriate rate.</li>
+                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
+                        </ol>
+
+                        <h5>Lab</h5>
+                        <ol>
+                            <li>The instructor was consistently prepared and well-organized.</li>
+                            <li>The instructor presented material clearly at the appropriate rate.</li>
+                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
+                            <li>Lab facilities were adequete for the assigned labs</li>
+                            <li>There was enough supplies for lab assignments.</li>
+                        </ol>
+
+                        <h5>Discussion</h5>
+                        <ol>
+                            <li>The instructor was consistently prepared and well-organized.</li>
+                            <li>The instructor presented material clearly at the appropriate rate.</li>
+                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
+                        </ol>
+
+
+                    </fieldset>
+
+                </div>
+
             </div>
         </div>
 
@@ -108,6 +320,64 @@
         </footer>
 
     </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#courseSections a").click(function (event) {
+                // set the active flag on the nav button
+                var $lis = $(this).closest('ul').find('li');
+                $lis.removeClass('active');
+                $(this).closest('li').addClass('active');
+
+                $('.section').hide();
+                $("#" + $(this).data('id')).show();
+
+                // stop the default "link" action
+                event.preventDefault();
+            });
+
+            // expand the nav menu for courses
+            $('#courseSections button.expand').click(function (event) {
+                if ($(this).find('i').hasClass('icon-chevron-down')) {
+                    $('li[data-id="' + $(this).data('id') + '"]').show();
+                }
+                else {
+                    $('li[data-id="' + $(this).data('id') + '"]').hide();
+                }
+
+                $(this).find('i').toggleClass('icon-chevron-down icon-chevron-up');
+
+                event.preventDefault();
+            });
+
+            // add a new instructor
+            $('.addInstructor').click(function (event) {
+
+                var first = $(this).siblings('.firstname').val();
+                var last = $(this).siblings('.lastname').val();
+
+                var $div = $('<div>').addClass('instructor');
+                $div.append($('<span>').addClass('span2').html(first));
+                $div.append($('<span>').addClass('span2').html(last));
+                $div.append($('<a>').attr('href', '#').addClass('remove removeInstructor btn btn-danger').append($('<i>').addClass('icon-minus')));
+                $div.hide();
+
+                $div.insertBefore($(this).closest('div')).show('normal');
+
+                $(this).siblings('.firstname, .lastname').val('');
+
+                event.preventDefault();
+            });
+
+            // remove the instructor
+            $('body').on('click', '.removeInstructor', function (event) {
+                $(this).closest('div').hide('normal', function () { $(this).remove(); });
+                event.preventDefault();
+            });
+
+        });
+    </script>
 
   </body>
 </html>
