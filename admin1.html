@@ -96,6 +96,10 @@
         <fieldset>
             <legend>Courses</legend>
 
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="#" id="select-visible">Select Visible</a></li>
+                </ul>
+
                 <ul class="nav nav-pills">
                     <li class="active"><a class="filter-btn" data-id="All" href="#">All</a></li>                        
                     <li><a class="filter-btn" data-id="LowerDivision" href="#">Lower Division</a></li>
@@ -199,6 +203,13 @@
                         }
                     });
                 }
+            });
+
+            $("#select-visible").click(function (event) {
+
+                $('.course:visible').click();
+
+                event.preventDefault();
             });
 
         });
