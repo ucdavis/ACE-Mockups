@@ -180,7 +180,7 @@
 
                         <h5>Lecture</h5>
 
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -204,7 +204,7 @@
                                     <td>Lecture was at a good time of day.</td>
                                     <td>Numerical</td>
                                 </tr>
-                                <tr>
+                                <tr class="nodrag nodrop">
                                     <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
                                     <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
                                     <td>
@@ -220,7 +220,7 @@
 
                         <h5>Discussion</h5>
 
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -260,7 +260,7 @@
 
                         <h5>Lab</h5>
 
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -302,7 +302,7 @@
 
                         <h5>Lecture</h5>
 
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -326,7 +326,7 @@
                                     <td>The instructor encouraged questions from the class and answered questions clearly.</td>
                                     <td>Numerical</td>
                                 </tr>
-                                <tr>
+                                <tr class="nodrag nodrop">
                                     <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
                                     <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
                                     <td>
@@ -342,7 +342,7 @@
 
                         <h5>Lab</h5>
 
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -391,7 +391,7 @@
                         </table>
 
                         <h5>Discussion</h5>
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -491,7 +491,7 @@
 
                         <h5>Lecture (8:00AM-8:50AM MWF)</h5>
 
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -531,7 +531,7 @@
 
                         <h5>Discussion (6:10PM-7:00PM W)</h5>
 
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -571,7 +571,7 @@
 
                         <h5>Lab (1:10PM-4:00PM M)</h5>
 
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -613,7 +613,7 @@
 
                         <h5>Lecture</h5>
 
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -653,7 +653,7 @@
 
                         <h5>Lab</h5>
 
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -702,7 +702,7 @@
                         </table>
 
                         <h5>Discussion</h5>
-                        <table class="table table-striped">
+                        <table class="table table-striped dnd">
                             <thead>
                                 <tr>
                                     <th></th>
@@ -845,6 +845,8 @@
 
                 event.preventDefault();
             });
+
+            $('.dnd').tableDnD();
         });
     </script>
 
