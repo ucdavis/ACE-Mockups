@@ -17,7 +17,7 @@
         .remove, .add {
             margin-bottom: 10px;
         }
-        a.btn.remove i, a.btn.add i, #courseSections.nav li button i {
+        a.btn.remove i, a.btn.add i, #courseSections.nav li button i, a.btn i {
             margin-right: 0;
         }
         .instructor span.span2{
@@ -29,6 +29,18 @@
         #courseSections.nav li a {width: 297px; display:  inline-block;}
         #courseSections.nav li button { height: 36px; margin-bottom: 3px; }
         #courseSections.nav li.nav-section {margin-left:  46px;}
+
+        .table tr td:nth-child(1), .table tr th:nth-child(1) {
+            width: 10px;
+        }
+        .table tr td:nth-child(2), .table tr th:nth-child(2) {
+            width: 400px;
+        }
+        .table tr td:nth-child(3), .table tr th:nth-child(3) {
+            width: 75px;
+        }
+        
+        .table .input-xxlarge {width: 450px;}
     </style>
 
   </head>
@@ -137,25 +149,25 @@
                         <div class="instructor">
                             <input type="text" class="span2 firstname" placeholder="First Name">
                             <input type="text" class="span2 lastname" placeholder="Last Name">
-                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            <a href="#" class="add addInstructor btn btn-success"><i class="icon-plus"></i></a>
                             </select>
                         </div>
 
-                        <h4>Discussion (6:10PM-7:00PM W)</h4>
+                        <h4>Discussion</h4>
 
                         <div class="instructor">
                             <input type="text" class="span2 firstname" placeholder="First Name">
                             <input type="text" class="span2 lastname" placeholder="Last Name">
-                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            <a href="#" class="add addInstructor btn btn-success"><i class="icon-plus"></i></a>
                             </select>
                         </div>
 
-                        <h4>Lab (1:10PM-4:00PM M)</h4>
+                        <h4>Lab</h4>
 
                         <div class="instructor">
                             <input type="text" class="span2 firstname" placeholder="First Name">
                             <input type="text" class="span2 lastname" placeholder="Last Name">
-                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            <a href="#" class="add addInstructor btn btn-success"><i class="icon-plus"></i></a>
                             </select>
                         </div>
 
@@ -166,55 +178,256 @@
 
                         <h4>Sections</h4>
 
-                        <h5>Lecture (8:00AM-8:50AM MWF)</h5>
+                        <h5>Lecture</h5>
 
-                        <ol>
-                            <li>Overall quality of this course.</li>
-                            <li>What grade do you expect to receive in this course?</li>
-                            <li>Lecture was at a good time of day.</li>
-                        </ol>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Overall quality of this course.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>What grade do you expect to receive in this course?</td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Lecture was at a good time of day.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                        <h5>Discussion (6:10PM-7:00PM W)</h5>
+                        <h5>Discussion</h5>
 
-                        <ol>
-                            <li>Overall quality of this course.</li>
-                            <li>What grade do you expect to receive in this course?</li>
-                            <li>Discussion was at a good time of day.</li>
-                        </ol>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Overall quality of this course.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>What grade do you expect to receive in this course?</td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Discussion was at a good time of day.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                        <h5>Lab (1:10PM-4:00PM M)</h5>
+                        <h5>Lab</h5>
 
-                        <ol>
-                            <li>Overall quality of this course.</li>
-                            <li>What grade do you expect to receive in this course?</li>
-                            <li>Lab was at a good time of day.</li>
-                        </ol>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Overall quality of this course.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>What grade do you expect to receive in this course?</td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Lab was at a good time of day.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <h4>Instructor(s)</h4>
 
                         <h5>Lecture</h5>
-                        <ol>
-                            <li>The instructor was consistently prepared and well-organized.</li>
-                            <li>The instructor presented material clearly at the appropriate rate.</li>
-                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
-                        </ol>
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor was consistently prepared and well-organized.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor presented material clearly at the appropriate rate.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor encouraged questions from the class and answered questions clearly.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <h5>Lab</h5>
-                        <ol>
-                            <li>The instructor was consistently prepared and well-organized.</li>
-                            <li>The instructor presented material clearly at the appropriate rate.</li>
-                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
-                            <li>Lab facilities were adequete for the assigned labs</li>
-                            <li>There was enough supplies for lab assignments.</li>
-                        </ol>
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor was consistently prepared and well-organized.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor presented material clearly at the appropriate rate.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor encouraged questions from the class and answered questions clearly.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Lab facilities were adequete for the assigned labs.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>There was enough supplies for lab assignments.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <h5>Discussion</h5>
-                        <ol>
-                            <li>The instructor was consistently prepared and well-organized.</li>
-                            <li>The instructor presented material clearly at the appropriate rate.</li>
-                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
-                        </ol>
-
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor was consistently prepared and well-organized.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor presented material clearly at the appropriate rate.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor encouraged questions from the class and answered questions clearly.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                     </fieldset>
 
@@ -237,7 +450,7 @@
                         <div class="instructor">
                             <input type="text" class="span2 firstname" placeholder="First Name">
                             <input type="text" class="span2 lastname" placeholder="Last Name">
-                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            <a href="#" class="add addInstructor btn btn-success"><i class="icon-plus"></i></a>
                             </select>
                         </div>
 
@@ -251,7 +464,7 @@
                         <div class="instructor">
                             <input type="text" class="span2 firstname" placeholder="First Name">
                             <input type="text" class="span2 lastname" placeholder="Last Name">
-                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            <a href="#" class="add addInstructor btn btn-success"><i class="icon-plus"></i></a>
                             </select>
                         </div>
 
@@ -265,7 +478,7 @@
                         <div class="instructor">
                             <input type="text" class="span2 firstname" placeholder="First Name">
                             <input type="text" class="span2 lastname" placeholder="Last Name">
-                            <a href="#" class="add addInstructor btn btn-primary"><i class="icon-plus"></i></a>
+                            <a href="#" class="add addInstructor btn btn-success"><i class="icon-plus"></i></a>
                             </select>
                         </div>
 
@@ -278,53 +491,254 @@
 
                         <h5>Lecture (8:00AM-8:50AM MWF)</h5>
 
-                        <ol>
-                            <li>Overall quality of this course.</li>
-                            <li>What grade do you expect to receive in this course?</li>
-                            <li>Lecture was at a good time of day.</li>
-                        </ol>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Overall quality of this course.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>What grade do you expect to receive in this course?</td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Lecture was at a good time of day.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <h5>Discussion (6:10PM-7:00PM W)</h5>
 
-                        <ol>
-                            <li>Overall quality of this course.</li>
-                            <li>What grade do you expect to receive in this course?</li>
-                            <li>Discussion was at a good time of day.</li>
-                        </ol>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Overall quality of this course.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>What grade do you expect to receive in this course?</td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Discussion was at a good time of day.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <h5>Lab (1:10PM-4:00PM M)</h5>
 
-                        <ol>
-                            <li>Overall quality of this course.</li>
-                            <li>What grade do you expect to receive in this course?</li>
-                            <li>Lab was at a good time of day.</li>
-                        </ol>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Overall quality of this course.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>What grade do you expect to receive in this course?</td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Lab was at a good time of day.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <h4>Instructor(s)</h4>
 
                         <h5>Lecture</h5>
-                        <ol>
-                            <li>The instructor was consistently prepared and well-organized.</li>
-                            <li>The instructor presented material clearly at the appropriate rate.</li>
-                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
-                        </ol>
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor was consistently prepared and well-organized.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor presented material clearly at the appropriate rate.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor encouraged questions from the class and answered questions clearly.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <h5>Lab</h5>
-                        <ol>
-                            <li>The instructor was consistently prepared and well-organized.</li>
-                            <li>The instructor presented material clearly at the appropriate rate.</li>
-                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
-                            <li>Lab facilities were adequete for the assigned labs</li>
-                            <li>There was enough supplies for lab assignments.</li>
-                        </ol>
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor was consistently prepared and well-organized.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor presented material clearly at the appropriate rate.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor encouraged questions from the class and answered questions clearly.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>Lab facilities were adequete for the assigned labs.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>There was enough supplies for lab assignments.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <h5>Discussion</h5>
-                        <ol>
-                            <li>The instructor was consistently prepared and well-organized.</li>
-                            <li>The instructor presented material clearly at the appropriate rate.</li>
-                            <li>The instructor encouraged questions from the class and answered questions clearly.</li>
-                        </ol>
-
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Question</th>
+                                    <th>Answer Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor was consistently prepared and well-organized.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor presented material clearly at the appropriate rate.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-danger remove-question"><i class="icon-remove"></i></a></td>
+                                    <td>The instructor encouraged questions from the class and answered questions clearly.</td>
+                                    <td>Numerical</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="btn btn-success add-question"><i class="icon-plus"></i></a></td>
+                                    <td><input type="text" placeholder="Question" class="input-xxlarge questionTxt"/></td>
+                                    <td>
+                                        <select style="width: 75px" class="questionType">
+                                            <option>#</option>
+                                            <option>Text</option>
+                                            <option># + Text</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                     </fieldset>
 
@@ -406,6 +820,30 @@
                 event.preventDefault();
             });
 
+            // remove question
+            $('.remove-question').click(function (event) {
+                $(this).closest('tr').hide('normal', function () { $(this).remove(); });
+                event.preventDefault();
+            });
+
+            // add question
+            $('.add-question').click(function (event) {
+                var q = $(this).closest('tr').find('input.questionTxt').val();
+                var t = $(this).closest('tr').find('select.questionType').val();
+
+                if (t == "#") t = "Numerical";
+
+                var $row = $('<tr>');
+                $row.append($('<td>').append($('<a>').addClass('btn btn-danger').append($('<i>').addClass('icon-plus'))));
+                $row.append($('<td>').html(q));
+                $row.append($('<td>').html(t));
+                $row.hide();
+
+                $row.insertBefore($(this).closest('tr'));
+                $row.show('normal');
+
+                event.preventDefault();
+            });
         });
     </script>
 
