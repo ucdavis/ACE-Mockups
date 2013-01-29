@@ -356,6 +356,13 @@
                 $('.section').hide();
                 $("#" + $(this).data('id')).show();
 
+                // expand the submenu if it exists and not already expanded
+                var $btn = $(this).siblings('button.expand');
+                if ($btn.find('i').hasClass('icon-chevron-down')) {
+                    $('li[data-id="' + $btn.data('id') + '"]').show();
+                    $(this).find('i').toggleClass('icon-chevron-down icon-chevron-up');
+                }
+
                 // stop the default "link" action
                 event.preventDefault();
             });
