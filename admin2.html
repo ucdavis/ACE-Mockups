@@ -774,8 +774,8 @@
                 // expand the submenu if it exists and not already expanded
                 var $btn = $(this).siblings('button.expand');
                 if ($btn.find('i').hasClass('icon-chevron-down')) {
-                    $('li[data-id="' + $btn.data('id') + '"]').show();
-                    $(this).find('i').toggleClass('icon-chevron-down icon-chevron-up');
+                    $('li[data-id="' + $btn.data('id') + '"]').show('normal');
+                    $btn.find('i').toggleClass('icon-chevron-down icon-chevron-up');
                 }
 
                 // stop the default "link" action
@@ -785,10 +785,10 @@
             // expand the nav menu for courses
             $('#courseSections button.expand').click(function (event) {
                 if ($(this).find('i').hasClass('icon-chevron-down')) {
-                    $('li[data-id="' + $(this).data('id') + '"]').show();
+                    $('li[data-id="' + $(this).data('id') + '"]').show('normal');
                 }
                 else {
-                    $('li[data-id="' + $(this).data('id') + '"]').hide();
+                    $('li[data-id="' + $(this).data('id') + '"]').hide('normal');
                 }
 
                 $(this).find('i').toggleClass('icon-chevron-down icon-chevron-up');
