@@ -125,7 +125,31 @@
             </ul>
             </div>
         </fieldset>
+
+        <fieldset>
         
+            <legend>Selected Courses</legend>
+
+            <ul class="unstyled row">
+                <li class="course span2"><a href="#section-modal" data-toggle="modal">CHE 002B</a></li>
+                <li class="course span2"><a href="#section-modal" data-toggle="modal">CHE 107B (Section 001)</a></li>
+                <li class="course span2"><a href="#section-modal" data-toggle="modal">CHE 210A (Section A,B)</a></li>
+            </ul>
+
+        </fieldset>
+        
+        <div class="modal hide fade" id="section-modal">
+            <div class="modal-header">Select Section</div>
+            <div class="modal-body">
+                <ul>
+                    <li><a href="#">Section 001</a></li>
+                    <li><a href="#">Section 002</a></li>
+                    <li><a href="#">Section 003</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+
         <fieldset>
             <legend>Options</legend>        
             
@@ -174,6 +198,7 @@
     </div>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
     <script type="text/javascript">
         $(function () {
