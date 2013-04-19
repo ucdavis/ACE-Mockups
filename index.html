@@ -1,78 +1,94 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ace-mockups by ucdavis</title>
-  </head>
+        <link href="stylesheets/bootstrap-custom.css" rel="stylesheet" />
+        <link href="stylesheets/font-awesome.min.css" rel="stylesheet"/>
+        <link href="stylesheets/studentsite.css" rel="stylesheet" />
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Ace-mockups</h1>
-        <h2>http://ucdavis.github.com/ACE-Mockups/</h2>
-        <a href="https://github.com/ucdavis/ACE-Mockups" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+        <script type="text/javascript" src="javascripts/modernizr.touch.js"></script>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>Welcome to GitHub Pages.</h3>
+        <title></title>
+    </head>
+    <body>
+        
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="index.html" class="brand">
+                        <img src="images/ace-logo.png" alt="UC Davis Logo" class="navbar-logo" />
+                    </a>
+                </div>
+            </div>
+        </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <div class="jumbotron">
+            <div class="container">
+                <h2>ACE Style Survey</h2>
+            </div>
+        </div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        <div class="container">
+            <div class="card">
+                <fieldset>
+                    <legend>Welcome!</legend>
+            
+                    <p>The purpose of this site is to evaluate different designs and layouts for the upcoming Academic Course Evaluation application.  The intent is to make the evaluations easy to understand and fill out.  You will be reviewing 2 different workflows for course evalautions.</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+                    <p>While reviewing the pages, please keep in mind that you may be doing an evaluation for each of your courses.  What would encourage you to fill out an evaluation?  What would prevent you from filling out an evaluation?  What was easy?  What wasn't?</p>
 
-<h3>Designer Templates</h3>
+                </fieldset>
+            </div>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+            <div class="card">
+                <fieldset>
+                    <legend>Instructions</legend>
 
-<h3>Rather Drive Stick?</h3>
+                    <ol>
+                        <li>Follow the link to the first sample.</li>
+                        <li>Follow the link to the second sample.</li>
+                        <li>Please fill out a short survey, in relation to your experience with the two samples.</li>
+                        <li>Thank you!</li>
+                    </ol>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+                </fieldset>
+            </div>
 
-<h3>Authors and Contributors</h3>
+            <div class="card" id="sample1">
+                <fieldset>
+                    <legend>Sample 1</legend>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+                    <div class="well">
+                        <strong>Explanation:</strong>
 
-<h3>Support or Contact</h3>
+                        <p>In this sample, each individual class time will have it's own distinct evalaution (ie. A different evaluation for Lecture and Discussion will need to be filled out).  It will be at the discretion of individual departments to determine the start time of each evaluation.</p>
+                    </div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
+                </fieldset>
+            </div>
 
-        <aside id="sidebar">
-          <a href="https://github.com/ucdavis/ACE-Mockups/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/ucdavis/ACE-Mockups/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+            <div class="card" id="sample2">
+                <fieldset>
+                    <legend>Sample 2</legend>
 
-          <p class="repo-owner"><a href="https://github.com/ucdavis/ACE-Mockups"></a> is maintained by <a href="https://github.com/ucdavis">ucdavis</a>.</p>
+                    <div class="well">
+                        <strong>Explanation:</strong>
+                            
+                        <p>In this sample, each course will have a single evaluation.  Questions will be asked about each class time (ie. Lecture, Discussion, Lab, etc.) and each instructor in a single evaluation.  In this case each course could have a different evaluation start time, but only one evaluation will be done for each course.</p>
+                    </div>
+                </fieldset>
+            </div>
 
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+            <div class="card" id="survey">
+                <fieldset>
+                    <legend>Quick Survey</legend>
+                </fieldset>
+            </div>
 
-  
-  </body>
+        </div>
+
+    </body>
 </html>
