@@ -32,17 +32,6 @@ fieldset legend {
 .navbar a.brand { padding: 5px 5px 5px;}
 .brand img { height: 50px;width: auto;}
 
-#term-selector {
-    padding:20px 15px 20px; 
-    color:white; 
-}
-#term-selector.hoverable {
-    cursor: pointer;
-}
-#term-selector.hoverable:hover {
-    color: #c99700;
-}
-
 @media (max-width: 979px) {
     body {
         padding-top: 0;
@@ -105,7 +94,7 @@ Desktop
 .numerical li label {padding: .5em;}
 .numerical li label:hover { background-color: #f8f8f8;}
 .numerical input[type="radio"] { display:  none; }
-.numerical input[type="radio"] + span i.icon-check-empty { display: inline-block; }
+.numerical input[type="radio"] + span i.icon-check-empty { display: inline-block; margin: 0 7px;}
 .numerical input[type="radio"] + span i.icon-check { display: none; }
 .numerical input[type="radio"]:checked + span i.icon-check-empty { display:  none; }
 .numerical input[type="radio"]:checked + span i.icon-check {
@@ -116,7 +105,10 @@ Desktop
 .additional-comments textarea {display: block;}
 @media(min-width: 768px)
 {
-    .no-touch label.radio {padding-left: 0;}
+    .no-touch label.radio {
+        padding-left: 0;
+        width: 25%;
+    }
 }
 
 
