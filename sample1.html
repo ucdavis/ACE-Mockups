@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="stylesheets/bootstrap-custom.css" rel="stylesheet" />
+        <link href="stylesheets/font-awesome.min.css" rel="stylesheet"/>
+        <link href="stylesheets/studentsite.css" rel="stylesheet" />
+
+        <script type="text/javascript" src="javascripts/modernizr.touch.js"></script>
+
+        <style type="text/css">
+            .disabled {
+                background-color: #fef1ec;
+            }
+            .disabled span {
+                color:  green;
+            }
+        </style>
+
+        <title></title>
+    </head>
+    <body>
+        
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="index.html" class="brand">
+                        <img src="images/ace-logo.png" alt="UC Davis Logo" class="navbar-logo" />
+                    </a>
+
+                    <ul class="nav pull-right">
+                        <li class="btn-danger"><a href="index.html#sample2">I'm Done with Sample 1</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h2>ACE Sample 1</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="alert alert-danger">Sample 1</div>    
+
+            <div class="card">
+                <fieldset>
+                    <legend>Short Calculus (MAT 016A)</legend>
+                </fieldset>
+
+                <ul class="nav nav-tabs nav-stacked evals">
+                    <li><a href="sample1eval.html">Lecture<span id="date0" class="pull-right"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <fieldset>
+                    <legend>History of the US(HIS 017A)</legend>
+                </fieldset>
+
+                <ul class="nav nav-tabs nav-stacked evals">
+                    <li>
+                        <a class="disabled">Lecture<span id="date1" class="pull-right"></span></a>
+                    </li>
+                    <li>
+                        <a class="disabled">Discussion<span id="date2" class="pull-right"></span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <fieldset>
+                    <legend>General Chem (CHE 002B)</legend>
+                </fieldset>
+
+                <ul class="nav nav-tabs nav-stacked evals">
+                    <li><a class="disabled" href="">Lecture<span id="date3" class="pull-right"></span></a></li>
+                    <li><a class="disabled" href="">Discussion<span id="date4" class="pull-right"></span></a></li>
+                    <li><a class="disabled" href="">Lab<span id="date5" class="pull-right"></span></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#date0').html('Ends ' + getDate(14));
+                $('#date1').html('Starts ' + getDate(1));
+                $('#date2').html('Starts ' + getDate(2));
+                $('#date3, #date4, #date5').html('Starts ' + getDate(4));
+            });
+
+            function getDate(daysAhead) {
+                var targetDate = new Date();
+                targetDate.setDate(targetDate.getDate() + daysAhead);
+
+                var dd = targetDate.getDate();
+                var mm = targetDate.getMonth() + 1; // 0 is January, so we must add 1
+                var yyyy = targetDate.getFullYear();
+
+                var dateString = mm + "/" + dd + "/" + yyyy;
+
+                return dateString;
+            }
+        </script>
+
+    </body>
+</html>
