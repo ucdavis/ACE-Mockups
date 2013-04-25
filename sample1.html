@@ -49,28 +49,29 @@
 
             <div class="card">
                 <fieldset>
-                    <legend>Short Calculus (MAT 016A)</legend>
-                </fieldset>
-
-                <ul class="nav nav-tabs nav-stacked evals">
-                    <li><a href="sample1eval.html">Lecture<span id="date0" class="pull-right"></span></a></li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <fieldset>
                     <legend>History of the US(HIS 017A)</legend>
                 </fieldset>
 
                 <ul class="nav nav-tabs nav-stacked evals">
                     <li>
-                        <a class="disabled">Lecture<span id="date1" class="pull-right"></span></a>
+                        <a href="sample1eval.html">Lecture<span id="date1" class="pull-right"></span></a>
                     </li>
                     <li>
-                        <a class="disabled">Discussion<span id="date2" class="pull-right"></span></a>
+                        <a href="sample1eval2.html">Discussion<span id="date2" class="pull-right"></span></a>
                     </li>
                 </ul>
             </div>
+
+            <div class="card">
+                <fieldset>
+                    <legend>Short Calculus (MAT 016A)</legend>
+                </fieldset>
+
+                <ul class="nav nav-tabs nav-stacked evals">
+                    <li><a href="" class="disabled">Lecture<span id="date0" class="pull-right"></span></a></li>
+                </ul>
+            </div>
+                       
 
             <div class="card">
                 <fieldset>
@@ -89,9 +90,9 @@
         <script type="text/javascript" src="javascripts/jquery.min.js"></script>
         <script type="text/javascript">
             $(function () {
-                $('#date0').html('Ends ' + getDate(14));
-                $('#date1').html('Starts ' + getDate(1));
-                $('#date2').html('Starts ' + getDate(2));
+                $('#date1').html('Ends ' + getDate(14));
+                $('#date2').html('Ends ' + getDate(10));
+                $('#date0').html('Starts ' + getDate(2));
                 $('#date3, #date4, #date5').html('Starts ' + getDate(4));
             });
 
