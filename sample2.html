@@ -12,12 +12,8 @@
         <script type="text/javascript" src="javascripts/modernizr.touch.js"></script>
 
         <style type="text/css">
-            .disabled {
-                background-color: #fef1ec;
-            }
-            .disabled span {
-                color:  green;
-            }
+            .upcoming li { clear: both;}
+            .upcoming li span { color:  red;}
         </style>
 
         <title></title>
@@ -49,17 +45,24 @@
 
             <div class="card">
                 <fieldset>
-                    
-                    <legend>Spring Quarter 2013</legend>
-
+                    <legend>Available Evaluations</legend>
+                
                     <ul class="nav nav-tabs nav-stacked evals">
                         <li><a href="sample2eval.html">History of the US (HIS 017A)<span id="date0" class="pull-right"></span></a></li>
-                        <li><a href="#" class="disabled">Short Calculus (MAT 016A)<span id="date1" class="pull-right"></span></a></li>
-                        <li><a href="#" class="disabled">General Chem (CHE 002B)<span id="date2" class="pull-right"></span></a></li>
                     </ul>
-                
-                </fieldset>
 
+                </fieldset>
+            </div>
+
+            <div class="card">
+                <fieldset>
+                    <legend>Upcoming Evaluations</legend>
+
+                    <ul class="nav nav-tabs nav-stacked upcoming evals">
+                        <li>Short Calculus (MAT 016A)<span id="date1" class="pull-right"></span></li>
+                        <li>General Chem (CHE 002B)<span id="date2" class="pull-right"></span></li>
+                    </ul>
+                </fieldset>
             </div>
 
         </div>
@@ -67,9 +70,9 @@
         <script type="text/javascript" src="javascripts/jquery.min.js"></script>
         <script type="text/javascript">
             $(function () {
-                $('#date0').html('Ends ' + getDate(14));
-                $('#date1').html('Starts ' + getDate(2));
-                $('#date2').html('Starts ' + getDate(4));
+                $('#date0').html('Ends ' + getDate(14) + ' 5:00 PM');
+                $('#date1').html('Starts ' + getDate(2) + ' 8:00 AM');
+                $('#date2').html('Starts ' + getDate(4) + ' 3:00 PM');
             });
 
             function getDate(daysAhead) {
