@@ -12,12 +12,8 @@
         <script type="text/javascript" src="javascripts/modernizr.touch.js"></script>
 
         <style type="text/css">
-            .disabled {
-                background-color: #fef1ec;
-            }
-            .disabled span {
-                color:  green;
-            }
+            .upcoming li { clear: both;}
+            .upcoming li span { color:  red;}
         </style>
 
         <title></title>
@@ -49,40 +45,39 @@
 
             <div class="card">
                 <fieldset>
-                    <legend>History of the US(HIS 017A)</legend>
-                </fieldset>
+                    <legend>Available Evaluations</legend>
 
-                <ul class="nav nav-tabs nav-stacked evals">
-                    <li>
-                        <a href="sample1eval.html">Lecture<span id="date1" class="pull-right"></span></a>
-                    </li>
-                    <li>
-                        <a href="sample1eval2.html">Discussion<span id="date2" class="pull-right"></span></a>
-                    </li>
-                </ul>
+                    <h3>History of the US (HIS 017A)</h3>
+
+                    <ul class="nav nav-tabs nav-stacked evals">
+                        <li>
+                            <a href="sample1eval.html">Lecture<span id="date1" class="pull-right"></span></a>
+                        </li>
+                        <li>
+                            <a href="sample1eval2.html">Discussion<span id="date2" class="pull-right"></span></a>
+                        </li>
+                    </ul>
+                </fieldset>
             </div>
 
             <div class="card">
                 <fieldset>
-                    <legend>Short Calculus (MAT 016A)</legend>
+                    <legend>Upcoming Evaluations</legend>
+
+
+                    <h3>Short Calculus (MAT 016A)</h3>
+                    <ul class="nav nav-tabs nav-stacked evals upcoming">
+                        <li>Lecture<span id="date0" class="pull-right"></span></li>
+                    </ul>
+
+                    <h3>General Chem (CHE 002B)</h3>
+                    <ul class="nav nav-tabs nav-stacked evals upcoming">
+                        <li>Lecture<span id="date3" class="pull-right"></span></li>
+                        <li>Discussion<span id="date4" class="pull-right"></span></li>
+                        <li>Lab<span id="date5" class="pull-right"></span></li>
+                    </ul>
+
                 </fieldset>
-
-                <ul class="nav nav-tabs nav-stacked evals">
-                    <li><a href="" class="disabled">Lecture<span id="date0" class="pull-right"></span></a></li>
-                </ul>
-            </div>
-                       
-
-            <div class="card">
-                <fieldset>
-                    <legend>General Chem (CHE 002B)</legend>
-                </fieldset>
-
-                <ul class="nav nav-tabs nav-stacked evals">
-                    <li><a class="disabled" href="">Lecture<span id="date3" class="pull-right"></span></a></li>
-                    <li><a class="disabled" href="">Discussion<span id="date4" class="pull-right"></span></a></li>
-                    <li><a class="disabled" href="">Lab<span id="date5" class="pull-right"></span></a></li>
-                </ul>
             </div>
 
         </div>
@@ -90,10 +85,11 @@
         <script type="text/javascript" src="javascripts/jquery.min.js"></script>
         <script type="text/javascript">
             $(function () {
-                $('#date1').html('Ends ' + getDate(14));
-                $('#date2').html('Ends ' + getDate(10));
-                $('#date0').html('Starts ' + getDate(2));
-                $('#date3, #date4, #date5').html('Starts ' + getDate(4));
+                $('#date1').html('Ends ' + getDate(14) + ' 5:00 PM');
+                $('#date2').html('Ends ' + getDate(10) + ' 4:30 PM');
+                $('#date0').html('Starts ' + getDate(2) +  ' 8:00 AM');
+                $('#date3, #date4').html('Starts ' + getDate(4) + ' 8:00 AM');
+                $('#date5').html('Starts ' + getDate(4) + ' 3:00 PM');
             });
 
             function getDate(daysAhead) {
