@@ -18,6 +18,22 @@
             .alert {display:none;}
             .touch #touch {display: block;}
             .no-touch #notouch {display: block;}
+            
+            .followMeBar {
+                position: relative;
+                z-index: 1;
+            }
+            .followMeBar.fixed {
+                background: rgba(255,255,255,.75);
+                
+                position: fixed;
+                top: 61px;
+                width: 98%;
+                z-index: 0;
+            }
+            .followMeBar.fixed.absolute {
+                position: absolute;
+            }
         </style>
 
     </head>
@@ -45,7 +61,7 @@
                 
             <div class="card">
                 <fieldset>
-                    <legend><div>Lecture</div></legend>
+                    <legend><div class="followMeBar">Lecture</div></legend>
             
                     <div class="well">The following questions apply to the Lecture.</div>
                     
@@ -244,7 +260,7 @@
 
             <div class="card">
                 <fieldset>
-                    <legend><div>Discussion</div></legend>
+                    <legend><div class="followMeBar">Discussion</div></legend>
             
                     <div class="well">The following questions apply to the Discussion.</div>
                     
@@ -382,7 +398,7 @@
 
             <div class="card">
                 <fieldset>
-                <legend><div>Hubert Farnsworth (Instructor for Lecture)</div></legend>
+                <legend><div class="followMeBar">Hubert Farnsworth (Instructor for Lecture)</div></legend>
 
                 <div class="well">The following questions apply to this instructor only.</div>
 
@@ -699,7 +715,7 @@
 
             <div class="card">
                 <fieldset>
-                <legend><div>Amy Wong (Teaching Assistant for Discussion)</div></legend>
+                <legend><div class="followMeBar">Amy Wong (Teaching Assistant for Discussion)</div></legend>
 
                 <div class="well">The following questions apply to this teaching assistant only.</div>
 
@@ -1016,7 +1032,7 @@
 
             <div class="card">
                 <fieldset>
-                    <legend>Additional Comments</legend>
+                    <legend><div class="followMeBar">Additional Comments</div></legend>
 
                     <textarea id="comments" maxlength="15"></textarea>
                 </fieldset>
@@ -1049,7 +1065,67 @@
 
                 });
 
+                var newStickies = new stickyTitles(jQuery(".followMeBar"));
+
+                newStickies.load();
+
+                jQuery(window).on("scroll", function() {
+
+                    newStickies.scroll();
+
+                }); 
+
             });
+
+            function stickyTitles(stickies) {
+
+                this.load = function() {
+
+                    stickies.each(function(){
+
+                        var thisSticky = jQuery(this).wrap('<div class="followWrap" />');
+                        thisSticky.parent().height(thisSticky.outerHeight());
+
+                        jQuery.data(thisSticky[0], 'pos', thisSticky.offset().top - 61);
+
+                    });
+                }
+
+                this.scroll = function() {
+
+                    stickies.each(function(i){
+
+
+                        var thisSticky = jQuery(this),
+                            nextSticky = stickies.eq(i+1),
+                            prevSticky = stickies.eq(i-1),
+                            pos = jQuery.data(thisSticky[0], 'pos');
+
+                        if (pos <= jQuery(window).scrollTop()) {
+
+                            thisSticky.addClass("fixed");
+
+                            if (nextSticky.length > 0 && thisSticky.offset().top >= jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight()) {
+
+                                thisSticky.addClass("absolute").css("top", jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight());
+
+                            }
+
+                        } else {
+
+                            thisSticky.removeClass("fixed");
+
+                            if (prevSticky.length > 0 && jQuery(window).scrollTop() <= jQuery.data(thisSticky[0], 'pos')  - prevSticky.outerHeight()) {
+
+                                prevSticky.removeClass("absolute").removeAttr("style");
+
+                            }
+
+                        }
+                    });         
+                }
+            }
+
         </script>
 
     </body>
