@@ -19,8 +19,8 @@
             .touch #touch {display: block;}
             .no-touch #notouch {display: block;}
 
-            /* Desktop */
-            @media (min-width: 980px)
+            /* Desktop and Tablets */
+            @media (min-width: 768px)
             {
                 .row-fluid.header {
                     border-bottom: 1px solid #f3f3f3;
@@ -38,18 +38,21 @@
                     background-color: #f3f3f3;    
                 }
                 
-                .row-fluid .prompt, .row-fluid .options {
-                    /*border:  1px solid orange;*/
+                .row-fluid .prompt, .row-fluid .options, .row-fluid .text {
                     padding-left: 10px;
                 }
 
+                .row-fluid .text { text-align: center; }
+                .row-fluid .text textarea { width: 90%;}
+                .row-fluid .comments-prompt { margin-left: 15px; margin-top: 0; font-weight: normal;}
+            
                 .row-fluid .option {
-                    /*border:  1px solid green;*/
                     text-align: center;
                 }    
             
                 .comments-prompt
                 {
+                    text-align: left;
                     margin-top: 1.5em;
                     color: #808080;
                 }
@@ -144,6 +147,55 @@
                                 <div class="span2 option"><input type="radio" name="q3" value="1" /></div>
                                 <div class="span2 option"><input type="radio" name="q3" value="0" /></div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid question alt-question">
+                        <div class="span6 prompt">
+                            4. <strong>Some really long statement that should run into a second line and maybe possibly into a third line, with just a little more text.</strong>
+                        </div>
+                        <div class="span6 options">
+                            <div class="row-fluid">
+                                <div class="span2 option"><input type="radio" name="q4" value="5" /></div>
+                                <div class="span2 option"><input type="radio" name="q4" value="4" /></div>
+                                <div class="span2 option"><input type="radio" name="q4" value="3" /></div>
+                                <div class="span2 option"><input type="radio" name="q4" value="2" /></div>
+                                <div class="span2 option"><input type="radio" name="q4" value="1" /></div>
+                                <div class="span2 option"><input type="radio" name="q4" value="0" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid question">
+                        <div class="span6 prompt">
+                            5. <strong>Please comment on the quality of the chalk board.</strong>
+                        </div>
+                        <div class="span6 text">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid question alt-question">
+                        <div class="span6 prompt">
+                            6. <strong>The AV equipment was good.</strong>
+                        </div>
+                        <div class="span6 options">
+                            <div class="row-fluid">
+                                <div class="span2 option"><input type="radio" name="q6" value="5" /></div>
+                                <div class="span2 option"><input type="radio" name="q6" value="4" /></div>
+                                <div class="span2 option"><input type="radio" name="q6" value="3" /></div>
+                                <div class="span2 option"><input type="radio" name="q6" value="2" /></div>
+                                <div class="span2 option"><input type="radio" name="q6" value="1" /></div>
+                                <div class="span2 option"><input type="radio" name="q6" value="0" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid question alt-question">
+                        <div class="span6 prompt">&nbsp;</div>
+                        <div class="span6 text">
+                            <div class="comments-prompt">Additional Comments</div>
+                            <textarea></textarea>
                         </div>
                     </div>
 
