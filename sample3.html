@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]>    <html lang="en" class="ie8">    <![endif]-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title></title>
+
+        <link href="stylesheets/bootstrap-custom.css" rel="stylesheet" />
+        <link href="stylesheets/font-awesome.min.css" rel="stylesheet"/>
+        <link href="stylesheets/studentsite.css" rel="stylesheet" />
+
+        <script type="text/javascript" src="javascripts/modernizr.touch.js"></script>
+
+        <style type="text/css">           
+            .alert {display:none;}
+            .touch #touch {display: block;}
+            .no-touch #notouch {display: block;}
+
+            /* Desktop */
+            @media (min-width: 980px)
+            {
+                .row-fluid.header {
+                    border-bottom: 1px solid #f3f3f3;
+                    padding-bottom: 1em;
+                    margin-bottom: 1em;
+                }
+
+                .row-fluid.question
+                {
+                    padding: .5em 0;
+                }
+            
+                .row-fluid.question.alt-question
+                {
+                    background-color: #f3f3f3;    
+                }
+                
+                .row-fluid .prompt, .row-fluid .options {
+                    /*border:  1px solid orange;*/
+                    padding-left: 10px;
+                }
+
+                .row-fluid .option {
+                    /*border:  1px solid green;*/
+                    text-align: center;
+                }    
+            
+                .comments-prompt
+                {
+                    margin-top: 1.5em;
+                    color: #808080;
+                }
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="index.html" class="brand">
+                        <img src="images/ace-logo.png" alt="UC Davis Logo" class="navbar-logo" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h2>Short Calculus (MAT 016A)</h2>
+            </div>
+        </div>
+
+        <div class="container">
+        
+            <div class="alert alert-danger">Sample 3</div>    
+                
+            <div class="card">
+                <fieldset>
+                    <legend>Lecture</legend>
+
+                    <!-- Scale Row -->
+                    <div class="row-fluid header">
+                        <div class="span6 prompt"></div>
+                        <div class="span6 options">
+                            <div class="row-fluid">
+                                <div class="span2 option">strongly agree</div>
+                                <div class="span2 option">agree</div>
+                                <div class="span2 option">neutral</div>
+                                <div class="span2 option">disagree</div>
+                                <div class="span2 option">strongly disagree</div>
+                                <div class="span2 option">n/a</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid question">
+                        <div class="span6 prompt">
+                            1. <strong>Overall quality of the course was good.</strong>
+                        </div>
+                        <div class="span6 options">
+                            <div class="row-fluid">
+                                <div class="span2 option"><input type="radio" name="q1" value="5" /></div>
+                                <div class="span2 option"><input type="radio" name="q1" value="4" /></div>
+                                <div class="span2 option"><input type="radio" name="q1" value="3" /></div>
+                                <div class="span2 option"><input type="radio" name="q1" value="2" /></div>
+                                <div class="span2 option"><input type="radio" name="q1" value="1" /></div>
+                                <div class="span2 option"><input type="radio" name="q1" value="0" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid question alt-question">
+                        <div class="span6 prompt">
+                            2. <strong>I will be receiving a good grade.</strong>
+                        </div>
+                        <div class="span6 options">
+                            <div class="row-fluid">
+                                <div class="span2 option"><input type="radio" name="q2" value="5" /></div>
+                                <div class="span2 option"><input type="radio" name="q2" value="4" /></div>
+                                <div class="span2 option"><input type="radio" name="q2" value="3" /></div>
+                                <div class="span2 option"><input type="radio" name="q2" value="2" /></div>
+                                <div class="span2 option"><input type="radio" name="q2" value="1" /></div>
+                                <div class="span2 option"><input type="radio" name="q2" value="0" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid question">
+                        <div class="span6 prompt">
+                            3. <strong>The time of the class was good.</strong>
+                        </div>
+                        <div class="span6 options">
+                            <div class="row-fluid">
+                                <div class="span2 option"><input type="radio" name="q3" value="5" /></div>
+                                <div class="span2 option"><input type="radio" name="q3" value="4" /></div>
+                                <div class="span2 option"><input type="radio" name="q3" value="3" /></div>
+                                <div class="span2 option"><input type="radio" name="q3" value="2" /></div>
+                                <div class="span2 option"><input type="radio" name="q3" value="1" /></div>
+                                <div class="span2 option"><input type="radio" name="q3" value="0" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments-prompt">Additional Comments</div>
+                    <textarea></textarea>
+
+                </fieldset>
+            </div>
+
+            <div class="form-actions card">
+                
+                <div class="well">
+                    <p>In practice clicking the following submit button would save the results.  But for this, you can click on it and it will just take you back to the main page for the sample.</p>
+                </div>
+
+                <a href="sample2.html" class="btn btn-primary">Submit</a>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            $(function () {
+
+                $('body').on('change', 'input:radio', function () {
+
+                    var $radio = $(this);
+
+                    var name = $radio.attr('name');
+                    $('input:radio[name="' + name + '"]').parent('label').removeClass('btn-success');
+
+                    $radio.parent('label').addClass('btn-success');
+
+                });
+
+                var newStickies = new stickyTitles(jQuery(".followMeBar"));
+
+                newStickies.load();
+
+                jQuery(window).on("scroll", function() {
+
+                    newStickies.scroll();
+
+                }); 
+
+            });
+
+            //http://stackoverflow.com/questions/13279725/getting-a-sticky-header-to-push-up-like-in-instagrams-iphone-app-using-css-a
+            function stickyTitles(stickies) {
+
+                this.load = function() {
+
+                    stickies.each(function(){
+
+                        var thisSticky = jQuery(this).wrap('<div class="followWrap" />');
+                        thisSticky.parent().height(thisSticky.outerHeight());
+
+                        jQuery.data(thisSticky[0], 'pos', thisSticky.offset().top - 61);
+
+                    });
+                }
+
+                this.scroll = function() {
+
+                    stickies.each(function(i){
+
+
+                        var thisSticky = jQuery(this),
+                            nextSticky = stickies.eq(i+1),
+                            prevSticky = stickies.eq(i-1),
+                            pos = jQuery.data(thisSticky[0], 'pos');
+
+                        if (pos <= jQuery(window).scrollTop()) {
+
+                            thisSticky.addClass("fixed");
+
+                            if (nextSticky.length > 0 && thisSticky.offset().top >= jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight()) {
+
+                                thisSticky.addClass("absolute").css("top", jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight());
+
+                            }
+
+                        } else {
+
+                            thisSticky.removeClass("fixed");
+
+                            if (prevSticky.length > 0 && jQuery(window).scrollTop() <= jQuery.data(thisSticky[0], 'pos')  - prevSticky.outerHeight()) {
+
+                                prevSticky.removeClass("absolute").removeAttr("style");
+
+                            }
+
+                        }
+                    });         
+                }
+            }
+        </script>
+
+    </body>
+</html>
