@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]>    <html lang="en" class="ie8">    <![endif]-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title></title>
+
+        <link href="stylesheets/bootstrap-custom.css" rel="stylesheet" />
+        <link href="stylesheets/font-awesome.min.css" rel="stylesheet"/>
+        <link href="stylesheets/studentsite.css" rel="stylesheet" />
+
+        <script type="text/javascript" src="javascripts/modernizr.touch.js"></script>
+
+        <style type="text/css">           
+            .alert {display:none;}
+            .touch #touch {display: block;}
+            .no-touch #notouch {display: block;}
+            
+            .followMeBar {
+                position: relative;
+                z-index: 1;
+            }
+            .followMeBar.fixed {
+                background: rgba(255,255,255,.75);
+                border-bottom: 1px solid #f3f3f3;
+                position: fixed;
+                top: 61px;
+                width: 98%;
+                z-index: 0;
+            }
+            .followMeBar.fixed.absolute {
+                position: absolute;
+            }
+            
+            @media (max-width: 768px)
+            {
+                .followMeBar.fixed { top: 0;}
+            }
+            
+            @media (min-width: 768px)
+            {
+                .numerical li label { padding: 0; }
+                .numerical input[type="radio"] {display: inline-block; margin-left: 15px;}
+                .numerical span.icons {display: none;}
+                .numerical span.term {display: inline-block; margin-left: 10px;}
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="index.html" class="brand">
+                        <img src="images/ace-logo.png" alt="UC Davis Logo" class="navbar-logo" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h2>Short Calculus (MAT 016A)</h2>
+            </div>
+        </div>
+
+        <div class="container">
+        
+            <div class="alert alert-danger">Sample 1</div>    
+                
+            <div class="card">
+                <fieldset>
+                    <legend><div class="followMeBar">Lecture</div></legend>
+            
+                    <div class="well">The following questions apply to the Lecture.</div>
+                    
+                    <ol>
+                        <li>
+                            <div class="question">Overall quality of this course.</div>
+                            <div class="answer">
+                                <ul class="numerical unstyled">
+                                    <li><label class="radio">
+                                        <input type="radio" name="q1" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q1" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q1" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q1" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q1" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q1" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">I will be receiving a good grade.</div>
+                            <div class="answer">
+                                <ul class="numerical unstyled">
+                                    <li><label class="radio">
+                                        <input type="radio" name="q2" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q2" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q2" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q2" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q2" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q2" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">The time of class was good.</div>
+                            <div class="answer">
+                                <ul class="numerical unstyled">
+                                    <li><label class="radio">
+                                        <input type="radio" name="q3" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q3" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q3" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q3" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q3" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q3" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                                </ul>
+
+                                <div class="additional-comments">
+                                    Additional comments
+                                    <textarea id="q3-comments" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </fieldset>
+            </div>
+
+            <div class="card">
+                <fieldset>
+                    <legend><div class="followMeBar">Discussion</div></legend>
+            
+                    <div class="well">The following questions apply to the Discussion.</div>
+                    
+                    <ol>
+                        <li>
+                            <div class="question">Overall quality of this course.</div>
+                            <div class="answer">
+                                <ul class="numerical unstyled">
+                                    <li><label class="radio">
+                                        <input type="radio" name="q4" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q4" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q4" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q4" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q4" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q4" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">The time of class was good.</div>
+                            <div class="answer">
+                                <ul class="numerical unstyled">
+                                    <li><label class="radio">
+                                        <input type="radio" name="q5" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q5" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q5" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q5" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q5" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q5" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                                </ul>
+
+                                <div class="additional-comments">
+                                    Additional comments
+                                    <textarea id="q3-comments" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </fieldset>
+            </div>
+
+            <div class="card">
+                <fieldset>
+                <legend><div class="followMeBar">Hubert Farnsworth (Instructor for Lecture)</div></legend>
+
+                <div class="well">The following questions apply to this instructor only.</div>
+
+                <ol>
+                    <li>
+                        <div class="question">The instructor was consistently prepared with well-organized lectures.</div>
+                        <div class="answer">
+                            <ul class="numerical unstyled">
+                                <li><label class="radio">
+                                        <input type="radio" name="q6" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q6" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q6" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q6" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q6" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q6" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">The instructor presented material clearly at an appropriate rate.</div>
+                        <div class="answer">
+                            <ul class="numerical unstyled">
+                                <li><label class="radio">
+                                        <input type="radio" name="q7" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q7" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q7" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q7" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q7" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q7" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">The instructor encouraged questions from the class and answered questions clearly.</div>
+                        <div class="answer">
+                            <ul class="numerical unstyled">
+                                <li><label class="radio">
+                                        <input type="radio" name="q8" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q8" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q8" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q8" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q8" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q8" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">The instructor was willing to help students outside of class.</div>
+                        <div class="answer">
+                            <ul class="numerical unstyled">
+                                <li><label class="radio">
+                                        <input type="radio" name="q9" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q9" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q9" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q9" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q9" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q9" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">Overall the instructor was effective.</div>
+                        <div class="answer">
+                            <ul class="numerical unstyled">
+                                <li><label class="radio">
+                                        <input type="radio" name="q10" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q10" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q10" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q10" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q10" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q10" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+
+            </fieldset>
+            </div>
+
+            <div class="card">
+                <fieldset>
+                <legend><div class="followMeBar">Amy Wong (Teaching Assistant for Discussion)</div></legend>
+
+                <div class="well">The following questions apply to this teaching assistant only.</div>
+
+                <ol>
+                    <li>
+                        <div class="question">The teaching assistant was consistently prepared with well-organized lectures.</div>
+                        <div class="answer">
+                            <ul class="numerical unstyled">
+                                <li><label class="radio">
+                                        <input type="radio" name="q11" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q11" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q11" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q11" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q11" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q11" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">The teaching assistant presented material clearly at an appropriate rate.</div>
+                        <div class="answer">
+                            <ul class="numerical unstyled">
+                                <li><label class="radio">
+                                        <input type="radio" name="q12" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q12" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q12" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q12" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q12" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q12" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">The teaching assistant encouraged questions from the class and answered questions clearly.</div>
+                        <div class="answer">
+                            <ul class="numerical unstyled">
+                                <li><label class="radio">
+                                        <input type="radio" name="q13" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q13" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q13" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q13" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q13" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q13" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">The teaching assistant was willing to help students outside of class.</div>
+                        <div class="answer">
+                            <ul class="numerical unstyled">
+                                <li><label class="radio">
+                                        <input type="radio" name="q14" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q14" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q14" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q14" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q14" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q14" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="question">Overall the teaching assistant was effective.</div>
+                        <div class="answer">
+                            <ul class="numerical unstyled">
+                                <li><label class="radio">
+                                        <input type="radio" name="q15" value="5" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q15" value="4"/>
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">agree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q15" value="3" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">neutral</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q15" value="2" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q15" value="1" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">strongly disagree</span>
+                                        </label>
+                                    </li>
+                                    <li><label class="radio">
+                                        <input type="radio" name="q15" value="0" />
+                                        <span class="icons">
+                                        <i class="icon-check button-icon"></i>
+                                        <i class="icon-check-empty button-icon"></i>
+                                        </span>
+                                        <span class="term">n/a</span>
+                                        </label>
+                                    </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+
+            </fieldset>
+            </div>
+
+            <div class="card">
+                <fieldset>
+                    <legend><div class="followMeBar">Additional Comments</div></legend>
+
+                    <textarea id="comments"></textarea>
+                </fieldset>
+            </div>
+
+            <div class="form-actions card">
+                
+                <div class="well">
+                    <p>In practice clicking the following submit button would save the results.  But for this, you can click on it and it will just take you back to the main page for the sample.</p>
+                </div>
+
+                <a href="sample2.html" class="btn btn-primary">Submit</a>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            $(function () {
+
+                $('body').on('change', 'input:radio', function () {
+
+                    var $radio = $(this);
+
+                    var name = $radio.attr('name');
+                    $('input:radio[name="' + name + '"]').parent('label').removeClass('btn-success');
+
+                    $radio.parent('label').addClass('btn-success');
+
+                });
+
+                var newStickies = new stickyTitles(jQuery(".followMeBar"));
+
+                newStickies.load();
+
+                jQuery(window).on("scroll", function () {
+
+                    newStickies.scroll();
+
+                });
+
+            });
+
+            //http://stackoverflow.com/questions/13279725/getting-a-sticky-header-to-push-up-like-in-instagrams-iphone-app-using-css-a
+            function stickyTitles(stickies) {
+
+                this.load = function () {
+
+                    var width = $(window).width();
+
+                    stickies.each(function () {
+
+                        var thisSticky = jQuery(this).wrap('<div class="followWrap" />');
+                        thisSticky.parent().height(thisSticky.outerHeight());
+
+                        if (width < 768)
+                        {
+                            jQuery.data(thisSticky[0], 'pos', thisSticky.offset().top);    
+                        }
+                        else
+                        {
+                            jQuery.data(thisSticky[0], 'pos', thisSticky.offset().top - 61);
+                        }
+                        
+
+                    });
+                }
+
+                this.scroll = function () {
+
+                    stickies.each(function (i) {
+
+
+                        var thisSticky = jQuery(this),
+                            nextSticky = stickies.eq(i + 1),
+                            prevSticky = stickies.eq(i - 1),
+                            pos = jQuery.data(thisSticky[0], 'pos');
+
+                        if (pos <= jQuery(window).scrollTop()) {
+
+                            thisSticky.addClass("fixed");
+
+                            if (nextSticky.length > 0 && thisSticky.offset().top >= jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight()) {
+
+                                thisSticky.addClass("absolute").css("top", jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight());
+
+                            }
+
+                        } else {
+
+                            thisSticky.removeClass("fixed");
+
+                            if (prevSticky.length > 0 && jQuery(window).scrollTop() <= jQuery.data(thisSticky[0], 'pos') - prevSticky.outerHeight()) {
+
+                                prevSticky.removeClass("absolute").removeAttr("style");
+
+                            }
+
+                        }
+                    });
+                }
+            }
+        </script>
+
+    </body>
+</html>
