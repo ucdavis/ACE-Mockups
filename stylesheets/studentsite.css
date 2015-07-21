@@ -102,10 +102,10 @@ Desktop
 .numerical li label {padding: .5em;}
 .numerical li label:hover { background-color: #f8f8f8;}
 .numerical input[type="radio"] { display:  none; }
-.numerical input[type="radio"] + span i.icon-check-empty { display: inline-block; margin: 0 7px;}
-.numerical input[type="radio"] + span i.icon-check { display: none; }
-.numerical input[type="radio"]:checked + span i.icon-check-empty { display:  none; }
-.numerical input[type="radio"]:checked + span i.icon-check {
+.numerical input[type="radio"] + span i.fa-square-o { display: inline-block; margin: 0 7px;}
+.numerical input[type="radio"] + span i.fa-check-square-o { display: none; }
+.numerical input[type="radio"]:checked + span i.fa-square-o { display:  none; }
+.numerical input[type="radio"]:checked + span i.fa-check-square-o {
     display:  inline-block;
     margin: 0 7px;
 }
