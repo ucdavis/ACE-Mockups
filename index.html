@@ -5,8 +5,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="stylesheets/bootstrap-custom.css" rel="stylesheet" />
-        <link href="stylesheets/font-awesome.min.css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="stylesheets/studentsite.css" rel="stylesheet" />
 
         <script type="text/javascript" src="javascripts/modernizr.touch.js"></script>
@@ -14,7 +14,7 @@
         <title></title>
     </head>
     <body>
-        
+        <!-- NAVBAR NEEDS TOTAL FIXUP / CHANGE.  NEEDS TO BE FIXED-TOP AS WELL -->
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
@@ -25,73 +25,47 @@
             </div>
         </div>
 
-        <div class="jumbotron">
-            <div class="container">
-                <h2>ACE Style Survey</h2>
+        <div>
+            <div class="subHeading large">
+                
+                <h1 class="pageTitle">Your Open Evaluations</h1>
+    
+                <span class="pull-right" style="margin-right: 21px;"><a href="https://eval.ucdavis.edu/Student/Faq">FAQ</a></span>
+
+                <div class="navPillBlue">
+                    <ul class="nav nav-pills">
+                        
+                    </ul>
+                </div>
             </div>
+            <div class="heading-adjustment" style="margin-top: 80px;"></div>
         </div>
 
-        <div class="container">
+        <div style="margin-left: 20px; margin-right: 20px;">
+            <div>
+                <p class="lead">Below are all of your course evaluations.  Please fill them out.</p>
 
-            <div class="alert alert-success"><strong>Thank you for taking the time to come and give your opinion.  As of this time, we have concluded the survey.</strong></div>
-
-            <div class="card">
-                <fieldset>
-                    <legend>Welcome!</legend>
-            
-                    <p>Thank you for taking a minute to review and provide your opinon on the upcoming Academic Course Evaluation application.  You will be reviewing 2 proposed workflows for students to fill out evaluations.</p>
-
-                    <p>Below are 2 sample sets that are being considered.  In both samples it reflects a student who is registered for 3 courses for the quarter, 1 course of which is available for evaluation.  Both samples ask you the exact same questions presented differently.  <strong>Please disregard the actual content of the questions as they are not real, questions will vary by department and can be different between different courses.</strong></p>
-
-                    <p>While reviewing the pages, please keep in mind that you may be doing an evaluation for each of your courses.  What would encourage you to fill out an evaluation?  What would prevent you from filling out an evaluation?  What was easy?  What wasn't?</p>
-
-                </fieldset>
-            </div>
-
-            <div class="card">
-                <fieldset>
-                    <legend>Instructions</legend>
-
-                    <ol>
-                        <li>Follow the link to the first sample.</li>
-                        <li>Follow the link to the second sample.</li>
-                        <li><strong>(Concluded)</strong> Please fill out a short survey, in relation to your experience with the two samples.</li>
-                        <li>Thank you!</li>
-                    </ol>
-
-                </fieldset>
-            </div>
-
-            <div class="card" id="sample1">
-                <fieldset>
-                    <legend>Sample 1</legend>
-
-                    <div class="well">
-                        <strong>Explanation:</strong>
-
-                        <p>In this sample, a course evaluation is broken into seperate evaluations.  Each class time (ie. lecture, discussion, lab, etc.) will have a distinct evaluation to be filled out.  In this case each of the individual evaluations can potentially have different start and end times and need to be completed for a complete course evaluation.</p>
+                <div>
+                    <div class="card">
+                        <fieldset>
+                            <legend>
+                                MATH CORE (MAT 101)
+                            </legend>
+                        </fieldset>
+                        <ul class="nav nav-tabs nav-stacked evals">
+                            <li>
+                                <a href="#">
+                                    Evaluation for Math Core
+                                    <span class="pull-right">
+                                        Due in <span class="badge badge-important">7</span> hour(s)
+                                    </span>
+                                </a>
+                        
+                            </li>
+                        </ul>
                     </div>
-
-                    <a href="sample1.html" class="btn btn-large btn-primary">Take me to Sample 1</a>
-
-                </fieldset>
+                </div>
             </div>
-
-            <div class="card" id="sample2">
-                <fieldset>
-                    <legend>Sample 2</legend>
-
-                    <div class="well">
-                        <strong>Explanation:</strong>
-                            
-                        <p>In this sample, each course will have a single evaluation.  Questions will be asked about each class time (ie. Lecture, Discussion, Lab, etc.) and each instructor in a single evaluation.  In this case each course could have a different evaluation start time, but only one evaluation will be done for each course.</p>
-                    </div>
-
-                    <a href="sample2.html" class="btn btn-large btn-primary">Take me to Sample 2</a>
-                </fieldset>
-            </div>
-
         </div>
-
     </body>
 </html>
