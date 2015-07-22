@@ -1,6 +1,7 @@
 body {
     background-color: #EEEEEE;
     background-image: url('../images/debut_light.png');
+   
     padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 }
             
@@ -26,6 +27,24 @@ fieldset legend {
 
 .button-icon { margin-right: 7px;}
 
+/* Styles for typography 
+-----------------------------------------------------------*/
+.instructions {
+	/*background-color: #FFF;*/
+	margin-bottom: 20px;
+	/*margin-left: 20px;*/
+	margin-top: -50px;
+	padding: 20px;
+}
+
+.subHeading h1{
+	/*color: #C99700;*/
+	color: #002855;
+	margin-top: 60px;
+	font-size: x-large;
+	margin-left: 20px;
+}
+
 /* Styles for navbar
 -----------------------------------------------------------*/
 .nav i, a.icon-btn i { margin-right: 7px; }
@@ -42,7 +61,6 @@ fieldset legend {
 	background-color: #335379;
 	padding: 10px;
 }
-
 
 
 /* Styles for jumbotron header
