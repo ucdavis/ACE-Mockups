@@ -39,10 +39,11 @@ fieldset legend {
 }
 
 .navbar {
-	background-color: #1A3E68;
-	
+	background-color: #335379;
+	padding: 10px;
 }
-/* #335379 muted blue */
+
+
 
 /* Styles for jumbotron header
 -----------------------------------------------------------*/
