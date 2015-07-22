@@ -38,6 +38,10 @@ fieldset legend {
     }
 }
 
+.navbar {
+	background-color: #335379;
+}
+
 /* Styles for jumbotron header
 -----------------------------------------------------------*/
 .jumbotron {
@@ -164,3 +168,5 @@ Touch styles
 @media(min-width: 768px) {
     textarea {width: 50%; height: 3em;}
 }
+
+
